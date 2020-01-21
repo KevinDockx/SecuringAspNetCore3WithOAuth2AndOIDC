@@ -1,0 +1,20 @@
+﻿@model ImageGallery.Client.ViewModels.EditImageViewModel
+
+<h2 class="leftMarginSmaller">Edit Image Title</h2>
+
+<form asp-action="EditImage" method="post" class="form-horizontal" role="form">
+
+    <div class="form-horizontal leftMarginDefault">
+        
+        <div class="form-group">
+            <div>You image's title</div>
+            <input asp-for="Title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <div>
+                <input type="submit" class="btn btn-primary" value="Change title" />
+            </div>
+        </div>
+    </div>
+</form>

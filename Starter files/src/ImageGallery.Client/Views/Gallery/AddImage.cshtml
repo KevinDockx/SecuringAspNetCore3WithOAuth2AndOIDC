@@ -1,0 +1,25 @@
+﻿@model ImageGallery.Client.ViewModels.AddImageViewModel
+
+<h2 class="leftMarginSmaller">Add Image</h2>
+
+<form asp-action="AddImage" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+
+    <div class="form-horizontal leftMarginDefault">
+        
+        <div class="form-group">
+            <div>You image's title</div>
+            <input asp-for="Title" class="form-control" />
+        </div>
+        
+        <div class="form-group">
+            <div>The image file</div>
+            <input asp-for="Files" type="file" class="form-control" accept=".jpg,.jpeg"/>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <input type="submit" class="btn btn-primary" value="Add image" />
+            </div>
+        </div>
+    </div>
+</form>
