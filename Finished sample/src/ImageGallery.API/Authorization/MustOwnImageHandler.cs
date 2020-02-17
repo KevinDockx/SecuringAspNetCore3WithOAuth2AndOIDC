@@ -1,6 +1,8 @@
 ﻿using ImageGallery.API.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Routing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,25 +13,22 @@ namespace ImageGallery.API.Authorization
     public class MustOwnImageHandler : AuthorizationHandler<MustOwnImageRequirement>
     {
         private readonly IGalleryRepository _galleryRepository;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public MustOwnImageHandler(IGalleryRepository galleryRepository)
+        public MustOwnImageHandler(IGalleryRepository galleryRepository,
+            IHttpContextAccessor httpContextAccessor)
         {
-            _galleryRepository = galleryRepository ?? 
+            _galleryRepository = galleryRepository ??
                 throw new ArgumentNullException(nameof(galleryRepository));
+            _httpContextAccessor = httpContextAccessor ??
+                throw new ArgumentNullException(nameof(httpContextAccessor));
         }
 
         protected override Task HandleRequirementAsync(
-            AuthorizationHandlerContext context, 
+            AuthorizationHandlerContext context,
             MustOwnImageRequirement requirement)
         {
-            var filterContext = context.Resource as AuthorizationFilterContext;
-            if (filterContext == null)
-            {
-                context.Fail();
-                return Task.CompletedTask;
-            }
-
-            var imageId = filterContext.RouteData.Values["id"].ToString();
+            var imageId = _httpContextAccessor.HttpContext.GetRouteValue("id").ToString();
             if (!Guid.TryParse(imageId, out Guid imageIdAsGuid))
             {
                 context.Fail();

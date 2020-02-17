@@ -32,6 +32,8 @@ namespace ImageGallery.API
             services.AddControllers()
                      .AddJsonOptions(opts => opts.JsonSerializerOptions.PropertyNamingPolicy = null);
 
+            services.AddHttpContextAccessor();
+
             services.AddScoped<IAuthorizationHandler, MustOwnImageHandler>();
 
             services.AddAuthorization(authorizationOptions =>

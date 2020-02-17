@@ -5,3 +5,9 @@
 /Starter Files/ImageGallery/.vs/ImageGallery/v15
 /.vs/SecuringAspNetCore2WithOAuth2AndOIDC/v15
 /.vs
+/Finished sample/.vs/ImageGallery/v16
+/Finished sample/src/ImageGallery.API/bin/Debug/netcoreapp3.1
+/Finished sample/src/ImageGallery.API/obj
+/Finished sample/src/Marvin.IDP/obj
+/Finished sample/src/ImageGallery.Model
+/Finished sample/src/ImageGallery.Client/obj
