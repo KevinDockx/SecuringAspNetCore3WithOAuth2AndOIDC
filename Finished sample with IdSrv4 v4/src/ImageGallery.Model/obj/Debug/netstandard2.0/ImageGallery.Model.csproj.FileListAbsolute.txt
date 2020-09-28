@@ -1,0 +1,17 @@
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.deps.json
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.dll
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.pdb
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.csprojAssemblyReference.cache
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.AssemblyInfoInputs.cache
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.AssemblyInfo.cs
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.dll
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.pdb
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.deps.json
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.dll
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\bin\Debug\netstandard2.0\ImageGallery.Model.pdb
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.csprojAssemblyReference.cache
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.AssemblyInfoInputs.cache
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.AssemblyInfo.cs
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.csproj.CoreCompileInputs.cache
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.dll
+C:\GitHub\KevinDockx\SecuringAspNetCore3WithOAuth2AndOIDC\Finished sample with IdSrv4 v4\src\ImageGallery.Model\obj\Debug\netstandard2.0\ImageGallery.Model.pdb
