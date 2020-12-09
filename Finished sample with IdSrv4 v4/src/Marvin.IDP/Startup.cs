@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using IdentityServerHost.Quickstart.UI;
@@ -28,7 +27,7 @@ namespace Marvin.IDP
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var marvinIDPDataDBConnectionString = 
+            var marvinIDPDataDBConnectionString =
                 "Server=(localdb)\\mssqllocaldb;Database=MarvinIDPDataDB;Trusted_Connection=True;";
 
             // uncomment, if you want to add an MVC-based UI
@@ -42,8 +41,8 @@ namespace Marvin.IDP
                 .AddTestUsers(TestUsers.Users);
 
             // not recommended for production - you need to store your key material somewhere secure
-            // builder.AddDeveloperSigningCredential();
-            builder.AddSigningCredential(LoadCertificateFromStore());
+            builder.AddDeveloperSigningCredential();
+            //builder.AddSigningCredential(LoadCertificateFromStore());
 
             var migrationsAssembly = typeof(Startup)
                 .GetTypeInfo().Assembly.GetName().Name;
@@ -139,10 +138,16 @@ namespace Marvin.IDP
                         context.ApiResources.Add(resource.ToEntity());
                     }
                     context.SaveChanges();
-                }                 
+                }
+                if (!context.ApiScopes.Any())
+                {
+                    foreach (var resource in Config.ApiScopes)
+                    {
+                        context.ApiScopes.Add(resource.ToEntity());
+                    }
+                    context.SaveChanges();
+                }
             }
         }
-
-
     }
 }

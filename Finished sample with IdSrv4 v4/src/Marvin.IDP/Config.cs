@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-
 using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
@@ -38,15 +37,15 @@ namespace Marvin.IDP
                     "Image Gallery API scope")
             };
 
-
         public static IEnumerable<ApiResource> ApiResources =>
             new ApiResource[] {
                 new ApiResource(
-                    "imagegalleryapi", 
-                    "Image Gallery API", 
+                    "imagegalleryapi",
+                    "Image Gallery API",
                     new[] { "role" })
                     {
-                        Scopes = { "imagegalleryapi"}
+                        Scopes = { "imagegalleryapi"},
+                        ApiSecrets = { new Secret("apisecret".Sha256())}
                     }
                 };
 
@@ -57,7 +56,7 @@ namespace Marvin.IDP
                 {
                     AccessTokenType = AccessTokenType.Reference,
                     AccessTokenLifetime = 120,
-                    AllowOfflineAccess = true, 
+                    AllowOfflineAccess = true,
                     UpdateAccessTokenClaimsOnRefresh = true,
                     ClientName = "Image Gallery",
                     ClientId = "imagegalleryclient",
